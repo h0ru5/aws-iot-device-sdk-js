@@ -541,6 +541,7 @@ function DeviceClient(options) {
 
    var protocols = {};
    protocols.mqtts = require('./lib/tls');
+   protocols.agent_connect = require('./lib/agent_connect');
    protocols.wss = require('./lib/ws');
 
    function _loadDefaultFilename() {
